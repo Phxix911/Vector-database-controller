@@ -1,0 +1,24 @@
+@00
+10080000      //move ram @00 to 0x80  
+10180000      //move ram @01 to 0x80  
+10280000
+10380000
+10480000  
+10580000
+10680000
+10780000     //move ram @07  to 0X80
+40880090    //compute MAN distance 0X08  and 0X80 0    0X08         
+20b0c0ba    //if 0X0b <7  function               0X09	   
+20b0c202      //if 0x0b = 7 goto IDLE            0X0a
+408800a0    //compute MAN distance 0X08    and 0X80     0X0b
+20a090fa           //  if 0a < 09  jump to   1010      0X0c
+00b0d0b1       //add 1 to 0x0b    0x0d
+20000091     // go back function    0x0e
+10a09000          //  move 0a  to 09    0X0f
+00b0d0e1    //add 0x0b +1 to 0x0e    0x10
+00b0d0b1       //add 1 to 0x0b    0x11
+20000091           //go to ADDRESS   0X12
+@20
+20000000      //IDLE  0x0e
+@FF
+00000003

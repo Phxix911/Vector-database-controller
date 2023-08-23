@@ -1,0 +1,655 @@
+
+*** Running vivado
+    with args -log toplevel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevel.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source toplevel.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 455.992 ; gain = 162.652
+Command: read_checkpoint -auto_incremental -incremental E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/utils_1/imports/synth_1/uart.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/utils_1/imports/synth_1/uart.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top toplevel -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 39796
+INFO: [Synth 8-11241] undeclared symbol 'RESET', assumed default net type 'wire' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:108]
+WARNING: [Synth 8-11065] parameter 'Max' becomes localparam in 'cpu' with formal parameter declaration list [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:132]
+WARNING: [Synth 8-11065] parameter 'Scale' becomes localparam in 'cpu' with formal parameter declaration list [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:133]
+WARNING: [Synth 8-11065] parameter 'DEPTH' becomes localparam in 'fifo_interface' with formal parameter declaration list [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:59]
+WARNING: [Synth 8-11065] parameter 'DEPTH' becomes localparam in 'fifo_out' with formal parameter declaration list [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:59]
+WARNING: [Synth 8-11065] parameter 'DEPTH' becomes localparam in 'long_stack' with formal parameter declaration list [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:40]
+WARNING: [Synth 8-11065] parameter 'RAMBaseAddr' becomes localparam in 'ram' with formal parameter declaration list [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/ram.sv:31]
+WARNING: [Synth 8-11065] parameter 'RAMAddrWidth' becomes localparam in 'ram' with formal parameter declaration list [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/ram.sv:32]
+WARNING: [Synth 8-11065] parameter 'RAMAddrWidth' becomes localparam in 'rom' with formal parameter declaration list [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/rom.sv:35]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1274.254 ; gain = 411.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'toplevel' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/alu.sv:23]
+INFO: [Synth 8-226] default block is never used [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:365]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:534]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:335]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rom' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/rom.sv:22]
+INFO: [Synth 8-3876] $readmem data file 'E:/EDU/Project_EDU/Xilinx_project/vector_database/ROM.txt' is read successfully [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/rom.sv:39]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/rom.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ram' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/ram.sv:23]
+INFO: [Synth 8-3876] $readmem data file 'E:/EDU/Project_EDU/Xilinx_project/vector_database/RAM.txt' is read successfully [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/ram.sv:43]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/ram.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'long_stack' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:24]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR bound to: 8'b10000000 
+INFO: [Synth 8-6155] done synthesizing module 'long_stack' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:24]
+WARNING: [Synth 8-7071] port 'valid' of module 'long_stack' is unconnected for instance 'stack1' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:83]
+WARNING: [Synth 8-7071] port 'empty' of module 'long_stack' is unconnected for instance 'stack1' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:83]
+WARNING: [Synth 8-7071] port 'full' of module 'long_stack' is unconnected for instance 'stack1' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:83]
+WARNING: [Synth 8-7023] instance 'stack1' of module 'long_stack' has 12 connections declared, but only 9 given [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:83]
+INFO: [Synth 8-6157] synthesizing module 'long_stack__parameterized0' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:24]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR bound to: 8'b10000001 
+INFO: [Synth 8-6155] done synthesizing module 'long_stack__parameterized0' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:24]
+WARNING: [Synth 8-7071] port 'valid' of module 'long_stack' is unconnected for instance 'stack2' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:94]
+WARNING: [Synth 8-7071] port 'empty' of module 'long_stack' is unconnected for instance 'stack2' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:94]
+WARNING: [Synth 8-7071] port 'full' of module 'long_stack' is unconnected for instance 'stack2' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:94]
+WARNING: [Synth 8-7023] instance 'stack2' of module 'long_stack' has 12 connections declared, but only 9 given [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:94]
+INFO: [Synth 8-6157] synthesizing module 'long_stack__parameterized1' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:24]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR bound to: 8'b10000010 
+INFO: [Synth 8-6155] done synthesizing module 'long_stack__parameterized1' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:24]
+WARNING: [Synth 8-7071] port 'valid' of module 'long_stack' is unconnected for instance 'stack3' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:105]
+WARNING: [Synth 8-7071] port 'empty' of module 'long_stack' is unconnected for instance 'stack3' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:105]
+WARNING: [Synth 8-7071] port 'full' of module 'long_stack' is unconnected for instance 'stack3' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:105]
+WARNING: [Synth 8-7023] instance 'stack3' of module 'long_stack' has 12 connections declared, but only 9 given [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:105]
+INFO: [Synth 8-6157] synthesizing module 'fifo_interface' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:45]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR bound to: 8'b10000011 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_interface' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:45]
+WARNING: [Synth 8-7071] port 'empty' of module 'fifo_interface' is unconnected for instance 'uart_input' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:117]
+WARNING: [Synth 8-7071] port 'full' of module 'fifo_interface' is unconnected for instance 'uart_input' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:117]
+WARNING: [Synth 8-7071] port 'valid' of module 'fifo_interface' is unconnected for instance 'uart_input' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:117]
+WARNING: [Synth 8-7023] instance 'uart_input' of module 'fifo_interface' has 10 connections declared, but only 7 given [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:117]
+INFO: [Synth 8-6157] synthesizing module 'fifo_out' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:45]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR bound to: 8'b10000100 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_out' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:45]
+WARNING: [Synth 8-7071] port 'empty' of module 'fifo_out' is unconnected for instance 'fifo_out' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:126]
+WARNING: [Synth 8-7071] port 'full' of module 'fifo_out' is unconnected for instance 'fifo_out' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:126]
+WARNING: [Synth 8-7023] instance 'fifo_out' of module 'fifo_out' has 10 connections declared, but only 8 given [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:126]
+INFO: [Synth 8-6157] synthesizing module 'uart' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_rx.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_rx.sv:128]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_rx.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'toplevel' (0#1) [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element CurrRegSelect_reg was removed.  [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:272]
+WARNING: [Synth 8-6014] Unused sequential element CurrRegSelect1_reg was removed.  [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:273]
+WARNING: [Synth 8-6014] Unused sequential element CurrRegSelect2_reg was removed.  [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:274]
+WARNING: [Synth 8-6014] Unused sequential element CurrProgContext_reg was removed.  [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:275]
+WARNING: [Synth 8-87] always_comb on 'CurrRegA_reg' did not result in combinational logic [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:110]
+WARNING: [Synth 8-87] always_comb on 'CurrRegB_reg' did not result in combinational logic [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:111]
+WARNING: [Synth 8-87] always_comb on 'temp_reg1_reg' did not result in combinational logic [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:574]
+WARNING: [Synth 8-87] always_comb on 'temp_reg2_reg' did not result in combinational logic [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:575]
+WARNING: [Synth 8-87] always_comb on 'temp_reg5_reg' did not result in combinational logic [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:577]
+WARNING: [Synth 8-87] always_comb on 'temp_reg6_reg' did not result in combinational logic [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:578]
+WARNING: [Synth 8-87] always_comb on 'temp_reg3_reg' did not result in combinational logic [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:101]
+WARNING: [Synth 8-3848] Net RESET in module/entity cpu does not have driver. [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:108]
+WARNING: [Synth 8-3848] Net opcode in module/entity cpu does not have driver. [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:58]
+WARNING: [Synth 8-87] always_comb on 'error_reg' did not result in combinational logic [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_rx.sv:119]
+WARNING: [Synth 8-87] always_comb on 'dout_total_reg' did not result in combinational logic [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_rx.sv:131]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1396.828 ; gain = 534.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1396.828 ; gain = 534.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1396.828 ; gain = 534.133
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1396.828 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/constrs_1/new/cpu_constraint.xdc]
+Finished Parsing XDC File [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/constrs_1/new/cpu_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1499.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1499.324 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1499.324 ; gain = 636.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1499.324 ; gain = 636.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1499.324 ; gain = 636.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'number_reg' in module 'uart_rx'
+WARNING: [Synth 8-327] inferring latch for variable 'CurrRegB_reg' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:111]
+WARNING: [Synth 8-327] inferring latch for variable 'CurrRegA_reg' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg1_reg' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:574]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg2_reg' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:575]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg6_reg' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:578]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg5_reg' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:577]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg3_reg' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/cpu.sv:101]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE1 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE3 |                              100 |                             0100
+                 iSTATE4 |                              101 |                             0101
+                 iSTATE5 |                              110 |                             0110
+                 iSTATE6 |                              111 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'number_reg' using encoding 'sequential' in module 'uart_rx'
+WARNING: [Synth 8-327] inferring latch for variable 'error_reg' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_rx.sv:119]
+WARNING: [Synth 8-327] inferring latch for variable 'dout_total_reg' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_rx.sv:131]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1499.324 ; gain = 636.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 5     
+	   3 Input   64 Bit       Adders := 2     
+	   4 Input   64 Bit       Adders := 1     
+	  65 Input   64 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 27    
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 19    
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 6     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 67    
++---XORs : 
+	                8 Bit    Wide XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 10    
+	               32 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 12    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Multipliers : 
+	              64x64  Multipliers := 1     
++---RAMs : 
+	               8K Bit	(256 X 32 bit)          RAMs := 1     
+	               8K Bit	(128 X 64 bit)          RAMs := 1     
+	               4K Bit	(64 X 64 bit)          RAMs := 3     
+	              512 Bit	(8 X 64 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 3     
+	   8 Input   64 Bit        Muxes := 3     
+	 128 Input   64 Bit        Muxes := 1     
+	  90 Input   64 Bit        Muxes := 2     
+	   5 Input   64 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 38    
+	  90 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 2     
+	   6 Input    8 Bit        Muxes := 1     
+	  16 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 4     
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 14    
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	  90 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	  16 Input    2 Bit        Muxes := 1     
+	  90 Input    1 Bit        Muxes := 16    
+	  16 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 17    
+	  13 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP Out0, operation Mode is: A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: PCIN+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: PCIN+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: PCIN+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: PCIN+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: PCIN+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: PCIN+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: Generating DSP Out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+DSP Report: operator Out0 is absorbed into DSP Out0.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart_input/write_pointer_reg[2]__0/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:69]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart_input/write_pointer_reg[1]__0/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:69]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart_input/write_pointer_reg[0]__0/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:69]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_interface.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'fifo_out/write_pointer_reg[2]__0/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:69]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'fifo_out/write_pointer_reg[1]__0/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:69]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'fifo_out/write_pointer_reg[0]__0/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:69]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/fifo_out.sv:69]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart2/uart_tx/cstate_reg[4]/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart2/uart_tx/cstate_reg[3]/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart2/uart_tx/cstate_reg[2]/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart2/uart_tx/cstate_reg[1]/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'uart2/uart_tx/cstate_reg[0]/Q' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/uart_tx.sv:141]
+WARNING: [Synth 8-3332] Sequential element (uart2/uart_rx/error_reg) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (fifo_out/i_127) is unused and will be removed from module toplevel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 1499.324 ; gain = 636.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|toplevel    | rom/ROM_reg       | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|toplevel    | stack1/memory_reg | 64 x 64(READ_FIRST)    | W |   | 64 x 64(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|toplevel    | stack2/memory_reg | 64 x 64(READ_FIRST)    | W |   | 64 x 64(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|toplevel    | stack3/memory_reg | 64 x 64(READ_FIRST)    | W |   | 64 x 64(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|toplevel    | ram/Mem_reg       | 128 x 64(READ_FIRST)   | W |   | 128 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------+-----------+----------------------+----------------+
+|toplevel    | uart_input/memory_reg | Implied   | 8 x 64               | RAM16X1S x 64  | 
++------------+-----------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1499.324 ; gain = 636.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:56 . Memory (MB): peak = 1729.871 ; gain = 867.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|toplevel    | rom/ROM_reg       | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|toplevel    | stack1/memory_reg | 64 x 64(READ_FIRST)    | W |   | 64 x 64(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|toplevel    | stack2/memory_reg | 64 x 64(READ_FIRST)    | W |   | 64 x 64(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|toplevel    | stack3/memory_reg | 64 x 64(READ_FIRST)    | W |   | 64 x 64(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|toplevel    | ram/Mem_reg       | 128 x 64(READ_FIRST)   | W |   | 128 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+-----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------+-----------+----------------------+----------------+
+|toplevel    | uart_input/memory_reg | Implied   | 8 x 64               | RAM16X1S x 64  | 
++------------+-----------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance rom/ROM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance stack1/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance stack2/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance stack3/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram/Mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:57 . Memory (MB): peak = 1738.906 ; gain = 876.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1738.906 ; gain = 876.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1738.906 ; gain = 876.211
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[63] with 1st driver pin 'CurrRegB_reg[63]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[63] with 2nd driver pin 'stack3/memory_reg/DOBDO[31]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[63] with 3rd driver pin 'stack2/memory_reg/DOBDO[31]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[63] with 4th driver pin 'stack1/memory_reg/DOBDO[31]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[62] with 1st driver pin 'CurrRegB_reg[62]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[62] with 2nd driver pin 'stack3/memory_reg/DOBDO[30]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[62] with 3rd driver pin 'stack2/memory_reg/DOBDO[30]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[62] with 4th driver pin 'stack1/memory_reg/DOBDO[30]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[61] with 1st driver pin 'CurrRegB_reg[61]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[61] with 2nd driver pin 'stack3/memory_reg/DOBDO[29]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[61] with 3rd driver pin 'stack2/memory_reg/DOBDO[29]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[61] with 4th driver pin 'stack1/memory_reg/DOBDO[29]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[60] with 1st driver pin 'CurrRegB_reg[60]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[60] with 2nd driver pin 'stack3/memory_reg/DOBDO[28]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[60] with 3rd driver pin 'stack2/memory_reg/DOBDO[28]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[60] with 4th driver pin 'stack1/memory_reg/DOBDO[28]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[59] with 1st driver pin 'CurrRegB_reg[59]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[59] with 2nd driver pin 'stack3/memory_reg/DOBDO[27]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[59] with 3rd driver pin 'stack2/memory_reg/DOBDO[27]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[59] with 4th driver pin 'stack1/memory_reg/DOBDO[27]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[58] with 1st driver pin 'CurrRegB_reg[58]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[58] with 2nd driver pin 'stack3/memory_reg/DOBDO[26]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[58] with 3rd driver pin 'stack2/memory_reg/DOBDO[26]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[58] with 4th driver pin 'stack1/memory_reg/DOBDO[26]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[57] with 1st driver pin 'CurrRegB_reg[57]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[57] with 2nd driver pin 'stack3/memory_reg/DOBDO[25]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[57] with 3rd driver pin 'stack2/memory_reg/DOBDO[25]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[57] with 4th driver pin 'stack1/memory_reg/DOBDO[25]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[56] with 1st driver pin 'CurrRegB_reg[56]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[56] with 2nd driver pin 'stack3/memory_reg/DOBDO[24]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[56] with 3rd driver pin 'stack2/memory_reg/DOBDO[24]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[56] with 4th driver pin 'stack1/memory_reg/DOBDO[24]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[55] with 1st driver pin 'CurrRegB_reg[55]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[55] with 2nd driver pin 'stack3/memory_reg/DOBDO[23]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[55] with 3rd driver pin 'stack2/memory_reg/DOBDO[23]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[55] with 4th driver pin 'stack1/memory_reg/DOBDO[23]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[54] with 1st driver pin 'CurrRegB_reg[54]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[54] with 2nd driver pin 'stack3/memory_reg/DOBDO[22]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[54] with 3rd driver pin 'stack2/memory_reg/DOBDO[22]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[54] with 4th driver pin 'stack1/memory_reg/DOBDO[22]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[53] with 1st driver pin 'CurrRegB_reg[53]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[53] with 2nd driver pin 'stack3/memory_reg/DOBDO[21]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[53] with 3rd driver pin 'stack2/memory_reg/DOBDO[21]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[53] with 4th driver pin 'stack1/memory_reg/DOBDO[21]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[52] with 1st driver pin 'CurrRegB_reg[52]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[52] with 2nd driver pin 'stack3/memory_reg/DOBDO[20]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[52] with 3rd driver pin 'stack2/memory_reg/DOBDO[20]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[52] with 4th driver pin 'stack1/memory_reg/DOBDO[20]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[51] with 1st driver pin 'CurrRegB_reg[51]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[51] with 2nd driver pin 'stack3/memory_reg/DOBDO[19]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[51] with 3rd driver pin 'stack2/memory_reg/DOBDO[19]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[51] with 4th driver pin 'stack1/memory_reg/DOBDO[19]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[50] with 1st driver pin 'CurrRegB_reg[50]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[50] with 2nd driver pin 'stack3/memory_reg/DOBDO[18]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[50] with 3rd driver pin 'stack2/memory_reg/DOBDO[18]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[50] with 4th driver pin 'stack1/memory_reg/DOBDO[18]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[49] with 1st driver pin 'CurrRegB_reg[49]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[49] with 2nd driver pin 'stack3/memory_reg/DOBDO[17]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[49] with 3rd driver pin 'stack2/memory_reg/DOBDO[17]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[49] with 4th driver pin 'stack1/memory_reg/DOBDO[17]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[48] with 1st driver pin 'CurrRegB_reg[48]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[48] with 2nd driver pin 'stack3/memory_reg/DOBDO[16]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[48] with 3rd driver pin 'stack2/memory_reg/DOBDO[16]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[48] with 4th driver pin 'stack1/memory_reg/DOBDO[16]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[47] with 1st driver pin 'CurrRegB_reg[47]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[47] with 2nd driver pin 'stack3/memory_reg/DOBDO[15]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[47] with 3rd driver pin 'stack2/memory_reg/DOBDO[15]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[47] with 4th driver pin 'stack1/memory_reg/DOBDO[15]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[46] with 1st driver pin 'CurrRegB_reg[46]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[46] with 2nd driver pin 'stack3/memory_reg/DOBDO[14]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[46] with 3rd driver pin 'stack2/memory_reg/DOBDO[14]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[46] with 4th driver pin 'stack1/memory_reg/DOBDO[14]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[45] with 1st driver pin 'CurrRegB_reg[45]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[45] with 2nd driver pin 'stack3/memory_reg/DOBDO[13]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[45] with 3rd driver pin 'stack2/memory_reg/DOBDO[13]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[45] with 4th driver pin 'stack1/memory_reg/DOBDO[13]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[44] with 1st driver pin 'CurrRegB_reg[44]_i_1/O' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/toplevel.sv:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin BUS_DATA[44] with 2nd driver pin 'stack3/memory_reg/DOBDO[12]' [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/sources_1/new/long_stack.sv:75]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       64|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1738.906 ; gain = 876.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1738.906 ; gain = 876.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1738.906 ; gain = 876.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1738.906 ; gain = 876.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |   328|
+|3     |LUT1     |    19|
+|4     |LUT2     |   323|
+|5     |LUT3     |   858|
+|6     |LUT4     |   482|
+|7     |LUT5     |   431|
+|8     |LUT6     |  1319|
+|9     |MUXF7    |    22|
+|10    |MUXF8    |     4|
+|11    |RAM16X1S |    64|
+|12    |RAMB18E1 |     1|
+|13    |RAMB36E1 |     4|
+|15    |FDRE     |   371|
+|16    |FDSE     |     8|
+|17    |LD       |   232|
+|18    |IBUF     |    45|
+|19    |OBUF     |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:01:00 . Memory (MB): peak = 1738.906 ; gain = 876.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 289 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:58 . Memory (MB): peak = 1738.906 ; gain = 773.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:01:01 . Memory (MB): peak = 1738.906 ; gain = 876.211
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1738.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 655 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'toplevel' is not ideal for floorplanning, since the cellview 'cpu' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1738.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 296 instances were transformed.
+  LD => LDCE: 232 instances
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+
+Synth Design complete | Checksum: a2d685f0
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 55 Warnings, 111 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:01:06 . Memory (MB): peak = 1738.906 ; gain = 1258.043
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.runs/synth_1/toplevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file toplevel_utilization_synth.rpt -pb toplevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 23 02:06:29 2023...

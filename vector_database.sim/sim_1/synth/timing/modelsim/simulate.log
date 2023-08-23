@@ -1,0 +1,46 @@
+# ERROR: No extended dataflow license exists
+# do {toplevel_tb_simulate.do}
+# vsim -voptargs=""+acc"" "+transport_int_delays" "+pulse_e/0" "+pulse_int_e/0" "+pulse_r/0" "+pulse_int_r/0" -L xil_defaultlib -L simprims_ver -L secureip -lib xil_defaultlib xil_defaultlib.toplevel_tb xil_defaultlib.glbl 
+# Start time: 20:42:43 on Aug 15,2023
+# Loading sv_std.std
+# Loading xil_defaultlib.toplevel_tb
+# ** Error: (vsim-7) Failed to open data file "E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.sim/sim_1/synth/timing/modelsim/modelsim_lib/msim/xil_defaultlib/test/_primary.dat" in read mode.
+# No such file or directory. (errno = ENOENT)
+# Loading xil_defaultlib.toplevel
+# Loading simprims_ver.OBUF
+# Loading simprims_ver.IBUF
+# Loading simprims_ver.BUFG
+# Loading xil_defaultlib.cpu
+# Loading simprims_ver.LUT6
+# Loading simprims_ver.LUT2
+# Loading simprims_ver.FDRE
+# Loading simprims_ver.LUT5
+# Loading simprims_ver.LUT4
+# Loading simprims_ver.LUT3
+# Loading simprims_ver.MUXF7
+# Loading simprims_ver.LUT1
+# Loading simprims_ver.CARRY4
+# Loading simprims_ver.LDCE
+# Loading xil_defaultlib.rom
+# Loading simprims_ver.RAMB18E1
+# Loading xil_defaultlib.uart
+# Loading xil_defaultlib.uart_tx
+# Loading xil_defaultlib.uart_rx
+# Loading xil_defaultlib.glbl
+# Loading simprims_ver.RB18_INTERNAL_VLOG
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from toplevel_tb_time_synth.sdf
+# Loading simprims_ver.x_lut2_mux4
+# Loading simprims_ver.x_lut3_mux8
+# Loading simprims_ver.x_lut1_mux2
+# Loading simprims_ver.latchsre_ldce
+# ** Fatal: SDF files require Intel FPGA Edition primitive library
+#    Time: 0 ps  Iteration: 0  Instance: /toplevel_tb File: ../../../../../vector_database.srcs/sim_1/new/toplevel_tb.sv
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./toplevel_tb_simulate.do PAUSED at line 9
+# End time: 21:10:38 on Aug 15,2023, Elapsed time: 0:27:55
+# Errors: 2, Warnings: 0

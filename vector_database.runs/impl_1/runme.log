@@ -1,0 +1,119 @@
+
+*** Running vivado
+    with args -log toplevel.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source toplevel.tcl -notrace
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source toplevel.tcl -notrace
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 456.145 ; gain = 163.406
+Command: link_design -top toplevel -part xc7k70tfbv676-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 863.133 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 423 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'toplevel' is not ideal for floorplanning, since the cellview 'cpu' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/constrs_1/new/cpu_constraint.xdc]
+Finished Parsing XDC File [E:/EDU/Project_EDU/Xilinx_project/vector_database/vector_database.srcs/constrs_1/new/cpu_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1002.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+
+7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k70t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[0] has multiple drivers: stack1/memory_reg/DOADO[0], stack2/memory_reg/DOADO[0], stack3/memory_reg/DOADO[0], and uart_input/CurrRegB_reg[0]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[10] has multiple drivers: stack1/memory_reg/DOADO[10], stack2/memory_reg/DOADO[10], stack3/memory_reg/DOADO[10], and uart_input/CurrRegB_reg[10]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[11] has multiple drivers: stack1/memory_reg/DOADO[11], stack2/memory_reg/DOADO[11], stack3/memory_reg/DOADO[11], and uart_input/CurrRegB_reg[11]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[12] has multiple drivers: stack1/memory_reg/DOADO[12], stack2/memory_reg/DOADO[12], stack3/memory_reg/DOADO[12], and uart_input/CurrRegB_reg[12]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[13] has multiple drivers: stack1/memory_reg/DOADO[13], stack2/memory_reg/DOADO[13], stack3/memory_reg/DOADO[13], and uart_input/CurrRegB_reg[13]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[14] has multiple drivers: stack1/memory_reg/DOADO[14], stack2/memory_reg/DOADO[14], stack3/memory_reg/DOADO[14], and uart_input/CurrRegB_reg[14]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[15] has multiple drivers: stack1/memory_reg/DOADO[15], stack2/memory_reg/DOADO[15], stack3/memory_reg/DOADO[15], and uart_input/CurrRegB_reg[15]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[16] has multiple drivers: stack1/memory_reg/DOADO[16], stack2/memory_reg/DOADO[16], stack3/memory_reg/DOADO[16], and uart_input/CurrRegB_reg[16]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[17] has multiple drivers: stack1/memory_reg/DOADO[17], stack2/memory_reg/DOADO[17], stack3/memory_reg/DOADO[17], and uart_input/CurrRegB_reg[17]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[18] has multiple drivers: stack1/memory_reg/DOADO[18], stack2/memory_reg/DOADO[18], stack3/memory_reg/DOADO[18], and uart_input/CurrRegB_reg[18]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[19] has multiple drivers: stack1/memory_reg/DOADO[19], stack2/memory_reg/DOADO[19], stack3/memory_reg/DOADO[19], and uart_input/CurrRegB_reg[19]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[1] has multiple drivers: stack1/memory_reg/DOADO[1], stack2/memory_reg/DOADO[1], stack3/memory_reg/DOADO[1], and uart_input/CurrRegB_reg[1]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[20] has multiple drivers: stack1/memory_reg/DOADO[20], stack2/memory_reg/DOADO[20], stack3/memory_reg/DOADO[20], and uart_input/CurrRegB_reg[20]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[21] has multiple drivers: stack1/memory_reg/DOADO[21], stack2/memory_reg/DOADO[21], stack3/memory_reg/DOADO[21], and uart_input/CurrRegB_reg[21]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[22] has multiple drivers: stack1/memory_reg/DOADO[22], stack2/memory_reg/DOADO[22], stack3/memory_reg/DOADO[22], and uart_input/CurrRegB_reg[22]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[23] has multiple drivers: stack1/memory_reg/DOADO[23], stack2/memory_reg/DOADO[23], stack3/memory_reg/DOADO[23], and uart_input/CurrRegB_reg[23]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[24] has multiple drivers: stack1/memory_reg/DOADO[24], stack2/memory_reg/DOADO[24], stack3/memory_reg/DOADO[24], and uart_input/CurrRegB_reg[24]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[25] has multiple drivers: stack1/memory_reg/DOADO[25], stack2/memory_reg/DOADO[25], stack3/memory_reg/DOADO[25], and uart_input/CurrRegB_reg[25]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[26] has multiple drivers: stack1/memory_reg/DOADO[26], stack2/memory_reg/DOADO[26], stack3/memory_reg/DOADO[26], and uart_input/CurrRegB_reg[26]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[27] has multiple drivers: stack1/memory_reg/DOADO[27], stack2/memory_reg/DOADO[27], stack3/memory_reg/DOADO[27], and uart_input/CurrRegB_reg[27]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[28] has multiple drivers: stack1/memory_reg/DOADO[28], stack2/memory_reg/DOADO[28], stack3/memory_reg/DOADO[28], and uart_input/CurrRegB_reg[28]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[29] has multiple drivers: stack1/memory_reg/DOADO[29], stack2/memory_reg/DOADO[29], stack3/memory_reg/DOADO[29], and uart_input/CurrRegB_reg[29]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[2] has multiple drivers: stack1/memory_reg/DOADO[2], stack2/memory_reg/DOADO[2], stack3/memory_reg/DOADO[2], and uart_input/CurrRegB_reg[2]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[30] has multiple drivers: stack1/memory_reg/DOADO[30], stack2/memory_reg/DOADO[30], stack3/memory_reg/DOADO[30], and uart_input/CurrRegB_reg[30]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[31] has multiple drivers: stack1/memory_reg/DOADO[31], stack2/memory_reg/DOADO[31], stack3/memory_reg/DOADO[31], and uart_input/CurrRegB_reg[31]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[32] has multiple drivers: stack1/memory_reg/DOBDO[0], stack2/memory_reg/DOBDO[0], stack3/memory_reg/DOBDO[0], and uart_input/CurrRegB_reg[32]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[33] has multiple drivers: stack1/memory_reg/DOBDO[1], stack2/memory_reg/DOBDO[1], stack3/memory_reg/DOBDO[1], and uart_input/CurrRegB_reg[33]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[34] has multiple drivers: stack1/memory_reg/DOBDO[2], stack2/memory_reg/DOBDO[2], stack3/memory_reg/DOBDO[2], and uart_input/CurrRegB_reg[34]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[35] has multiple drivers: stack1/memory_reg/DOBDO[3], stack2/memory_reg/DOBDO[3], stack3/memory_reg/DOBDO[3], and uart_input/CurrRegB_reg[35]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[36] has multiple drivers: stack1/memory_reg/DOBDO[4], stack2/memory_reg/DOBDO[4], stack3/memory_reg/DOBDO[4], and uart_input/CurrRegB_reg[36]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[37] has multiple drivers: stack1/memory_reg/DOBDO[5], stack2/memory_reg/DOBDO[5], stack3/memory_reg/DOBDO[5], and uart_input/CurrRegB_reg[37]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[38] has multiple drivers: stack1/memory_reg/DOBDO[6], stack2/memory_reg/DOBDO[6], stack3/memory_reg/DOBDO[6], and uart_input/CurrRegB_reg[38]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[39] has multiple drivers: stack1/memory_reg/DOBDO[7], stack2/memory_reg/DOBDO[7], stack3/memory_reg/DOBDO[7], and uart_input/CurrRegB_reg[39]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[3] has multiple drivers: stack1/memory_reg/DOADO[3], stack2/memory_reg/DOADO[3], stack3/memory_reg/DOADO[3], and uart_input/CurrRegB_reg[3]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[40] has multiple drivers: stack1/memory_reg/DOBDO[8], stack2/memory_reg/DOBDO[8], stack3/memory_reg/DOBDO[8], and uart_input/CurrRegB_reg[40]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[41] has multiple drivers: stack1/memory_reg/DOBDO[9], stack2/memory_reg/DOBDO[9], stack3/memory_reg/DOBDO[9], and uart_input/CurrRegB_reg[41]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[42] has multiple drivers: stack1/memory_reg/DOBDO[10], stack2/memory_reg/DOBDO[10], stack3/memory_reg/DOBDO[10], and uart_input/CurrRegB_reg[42]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[43] has multiple drivers: stack1/memory_reg/DOBDO[11], stack2/memory_reg/DOBDO[11], stack3/memory_reg/DOBDO[11], and uart_input/CurrRegB_reg[43]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[44] has multiple drivers: stack1/memory_reg/DOBDO[12], stack2/memory_reg/DOBDO[12], stack3/memory_reg/DOBDO[12], and uart_input/CurrRegB_reg[44]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[45] has multiple drivers: stack1/memory_reg/DOBDO[13], stack2/memory_reg/DOBDO[13], stack3/memory_reg/DOBDO[13], and uart_input/CurrRegB_reg[45]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[46] has multiple drivers: stack1/memory_reg/DOBDO[14], stack2/memory_reg/DOBDO[14], stack3/memory_reg/DOBDO[14], and uart_input/CurrRegB_reg[46]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[47] has multiple drivers: stack1/memory_reg/DOBDO[15], stack2/memory_reg/DOBDO[15], stack3/memory_reg/DOBDO[15], and uart_input/CurrRegB_reg[47]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[48] has multiple drivers: stack1/memory_reg/DOBDO[16], stack2/memory_reg/DOBDO[16], stack3/memory_reg/DOBDO[16], and uart_input/CurrRegB_reg[48]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[49] has multiple drivers: stack1/memory_reg/DOBDO[17], stack2/memory_reg/DOBDO[17], stack3/memory_reg/DOBDO[17], and uart_input/CurrRegB_reg[49]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[4] has multiple drivers: stack1/memory_reg/DOADO[4], stack2/memory_reg/DOADO[4], stack3/memory_reg/DOADO[4], and uart_input/CurrRegB_reg[4]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[50] has multiple drivers: stack1/memory_reg/DOBDO[18], stack2/memory_reg/DOBDO[18], stack3/memory_reg/DOBDO[18], and uart_input/CurrRegB_reg[50]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[51] has multiple drivers: stack1/memory_reg/DOBDO[19], stack2/memory_reg/DOBDO[19], stack3/memory_reg/DOBDO[19], and uart_input/CurrRegB_reg[51]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[52] has multiple drivers: stack1/memory_reg/DOBDO[20], stack2/memory_reg/DOBDO[20], stack3/memory_reg/DOBDO[20], and uart_input/CurrRegB_reg[52]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[53] has multiple drivers: stack1/memory_reg/DOBDO[21], stack2/memory_reg/DOBDO[21], stack3/memory_reg/DOBDO[21], and uart_input/CurrRegB_reg[53]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[54] has multiple drivers: stack1/memory_reg/DOBDO[22], stack2/memory_reg/DOBDO[22], stack3/memory_reg/DOBDO[22], and uart_input/CurrRegB_reg[54]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[55] has multiple drivers: stack1/memory_reg/DOBDO[23], stack2/memory_reg/DOBDO[23], stack3/memory_reg/DOBDO[23], and uart_input/CurrRegB_reg[55]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[56] has multiple drivers: stack1/memory_reg/DOBDO[24], stack2/memory_reg/DOBDO[24], stack3/memory_reg/DOBDO[24], and uart_input/CurrRegB_reg[56]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[57] has multiple drivers: stack1/memory_reg/DOBDO[25], stack2/memory_reg/DOBDO[25], stack3/memory_reg/DOBDO[25], and uart_input/CurrRegB_reg[57]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[58] has multiple drivers: stack1/memory_reg/DOBDO[26], stack2/memory_reg/DOBDO[26], stack3/memory_reg/DOBDO[26], and uart_input/CurrRegB_reg[58]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[59] has multiple drivers: stack1/memory_reg/DOBDO[27], stack2/memory_reg/DOBDO[27], stack3/memory_reg/DOBDO[27], and uart_input/CurrRegB_reg[59]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[5] has multiple drivers: stack1/memory_reg/DOADO[5], stack2/memory_reg/DOADO[5], stack3/memory_reg/DOADO[5], and uart_input/CurrRegB_reg[5]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[60] has multiple drivers: stack1/memory_reg/DOBDO[28], stack2/memory_reg/DOBDO[28], stack3/memory_reg/DOBDO[28], and uart_input/CurrRegB_reg[60]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[61] has multiple drivers: stack1/memory_reg/DOBDO[29], stack2/memory_reg/DOBDO[29], stack3/memory_reg/DOBDO[29], and uart_input/CurrRegB_reg[61]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[62] has multiple drivers: stack1/memory_reg/DOBDO[30], stack2/memory_reg/DOBDO[30], stack3/memory_reg/DOBDO[30], and uart_input/CurrRegB_reg[62]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[63] has multiple drivers: stack1/memory_reg/DOBDO[31], stack2/memory_reg/DOBDO[31], stack3/memory_reg/DOBDO[31], and uart_input/CurrRegB_reg[63]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[6] has multiple drivers: stack1/memory_reg/DOADO[6], stack2/memory_reg/DOADO[6], stack3/memory_reg/DOADO[6], and uart_input/CurrRegB_reg[6]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[7] has multiple drivers: stack1/memory_reg/DOADO[7], stack2/memory_reg/DOADO[7], stack3/memory_reg/DOADO[7], and uart_input/CurrRegB_reg[7]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[8] has multiple drivers: stack1/memory_reg/DOADO[8], stack2/memory_reg/DOADO[8], stack3/memory_reg/DOADO[8], and uart_input/CurrRegB_reg[8]_i_1/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uart_input/BUS_DATA[9] has multiple drivers: stack1/memory_reg/DOADO[9], stack2/memory_reg/DOADO[9], stack3/memory_reg/DOADO[9], and uart_input/CurrRegB_reg[9]_i_1/O.
+INFO: [Project 1-461] DRC finished with 64 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.816 . Memory (MB): peak = 1025.859 ; gain = 23.285
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 1 Warnings, 0 Critical Warnings and 65 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 23 02:06:55 2023...
